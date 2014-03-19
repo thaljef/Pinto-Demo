@@ -1,0 +1,59 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:22 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Data-OptList-0.108.tar.gz' => {
+    'md5' => 'f5c2d27987c1ec4b89b2702698881579',
+    'md5-ungz' => 'f63db73d65e8a5443a64fa225fad48dc',
+    'mtime' => '2013-07-06',
+    'sha256' => 'b4c7542803a644aff7c52abc50cdae1806cbc24fb7a8f98c38a518adaddaf28e',
+    'sha256-ungz' => '838b7ac0da782075938eb4997c398d9aaa832396cb0cefbdc5065560c3a36f6b',
+    'size' => 16201
+  },
+  'Mixin-Linewise-0.004.tar.gz' => {
+    'md5' => 'bd79936157ed8930e74b9fcfb223525f',
+    'md5-ungz' => 'f1c68cce690dc239a9baa089ed340da3',
+    'mtime' => '2013-06-18',
+    'sha256' => '7a50d171850d3e0dde51e041eecd40abc68396ea822baa4381951a7710833dd9',
+    'sha256-ungz' => 'b7517f6e0c0f8f731a45fb2efbc7cf4ccb5c734deb9b30871e956661f4fc9a00',
+    'size' => 14305
+  },
+  'Pod-Coverage-TrustPod-0.100002.tar.gz' => {
+    'md5' => '25234b3aa0e933b93e46a5b69bb34478',
+    'md5-ungz' => '26dcae2ea5d41f8869c58cb67a89b6a7',
+    'mtime' => '2012-04-21',
+    'sha256' => '2389f8085c16087b10f59f1bd1b9de5d83cca5eb203778a2af1cee897b89bb6e',
+    'sha256-ungz' => '3a9cc7f550d3eab05d095878d12293d5ce01f78c6c1f3e9547b2ba209deed61f',
+    'size' => 12016
+  },
+  'Pod-Eventual-0.093330.tar.gz' => {
+    'md5' => '38124f3c1dd8b53a122d8336dec89453',
+    'md5-ungz' => '064a145509402ee57532e349e80092c8',
+    'mtime' => '2009-11-29',
+    'sha256' => '29de14a69df8a26f7e8ff73daca5afa7acc84cc9b7ae28093a5b1af09a4830b6',
+    'sha256-ungz' => '45a703593e805318911435aca71174985910dbd9c9de8d2ae251db516deacd50',
+    'size' => 13223
+  },
+  'Sub-Exporter-0.986.tar.gz' => {
+    'md5' => 'bdfa41103f82ab8611af61fceed1271e',
+    'md5-ungz' => 'db5c4e6fd5a6851a09158570dcffaacd',
+    'mtime' => '2013-06-14',
+    'sha256' => 'a7456c3216552a40f66426764d8c81815dc80bc53e3fdf67bf9234e7830b9661',
+    'sha256-ungz' => 'baf5588b5e82ae569c23c34cb6127bbe30c5c034a744faa4b6d66c81dafdc381',
+    'size' => 45295
+  },
+  'Sub-Install-0.926.tar.gz' => {
+    'md5' => '89a7f82dd840bc2401f281b5f24732b9',
+    'md5-ungz' => '644e5dbaa62ea1dece64df2e135b65b6',
+    'mtime' => '2012-02-26',
+    'sha256' => 'acb2496643784976fe8edebc7b412e9a93f6f0825631f5bd9186c810aed1763e',
+    'sha256-ungz' => '02b67615d42483605da32e4b28268c18293e40773f2d4cd6f8f39fef39824861',
+    'size' => 15065
+  },
+  'Test-Deep-0.110.tar.gz' => {
+    'md5' => 'a5daeaaffcd8cf94a12594ff76970045',
+    'md5-ungz' => '3e29e3f25348c894abcafd4df0861b36',
+    'mtime' => '2012-06-16',
+    'sha256' => '05129ca28a5ae0fb969f994169f1da78fdca684a85f9eb0b32e89c6aa74b2d8b',
+    'sha256-ungz' => '63a517c00150aadf03032ebb41a6f5c290cc661d9a4a936868078a1d5333e835',
+    'size' => 35504
+  }
+};

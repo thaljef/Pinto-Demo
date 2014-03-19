@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:15 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Test-Pod-1.48.tar.gz' => {
+    'md5' => 'c6bfd00ccdcb417d68fb3c0a0ec884c8',
+    'md5-ungz' => '0e236dfd37b315a3606ae6229674419b',
+    'mtime' => '2013-05-06',
+    'sha256' => '2478cea781d3740ff4ce1432770707248fb3145946244a6d96e459bf14e4bcc2',
+    'sha256-ungz' => 'be1787793a5bae11b64d974cfc94134d6104df59aaef75ed82ea3eed93c1ea55',
+    'size' => 11291
+  }
+};

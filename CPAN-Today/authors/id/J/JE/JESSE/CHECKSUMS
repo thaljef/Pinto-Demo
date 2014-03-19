@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:17 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'HTTP-Server-Simple-0.44.tar.gz' => {
+    'md5' => '70d4ae98affb9e921ab1478bbdffca3b',
+    'md5-ungz' => 'c72f106d312078103712b7e57e96f809',
+    'mtime' => '2011-04-04',
+    'sha256' => 'cff4f882da63a9a71271e25d1dc9160e64e5dd1195ed0a63894609ada7bb7416',
+    'sha256-ungz' => '5f7226da21a9bc996420141e2cf87cc63e131cf4165f003b816a80b854e1464c',
+    'size' => 33804
+  }
+};

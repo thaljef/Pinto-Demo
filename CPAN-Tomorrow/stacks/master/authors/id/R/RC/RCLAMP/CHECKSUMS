@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:20 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Pod-Coverage-0.23.tar.gz' => {
+    'md5' => '12229e553ee7887680ee3db11da5ee52',
+    'md5-ungz' => '720f0b262b2a24731aff585a76bd889d',
+    'mtime' => '2013-05-01',
+    'sha256' => '30b7a0b0c942f44a7552c0d34e9b1f2e0ba0b67955c61e3b1589ec369074b107',
+    'sha256-ungz' => '46daf19a998c89950e6ad50d6a02fa1a56dc18f7a871c38b32eb699379228e7a',
+    'size' => 13211
+  }
+};

@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:13 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Dancer-1.150.tar.gz' => {
+    'md5' => '731ef5b32d08a442ff315e87db2c0f2c',
+    'md5-ungz' => 'bafc7b3947ca836cb2fd448c1ff0fd79',
+    'mtime' => '2010-02-17',
+    'sha256' => '305363d41ed209b08c2b82eee34428e1116fefdf09ab8df0e3132ec2c797d33a',
+    'sha256-ungz' => '56bb8b9a54e3e29cc793fce583b6c3d3c978a2a3662f3da75f0b646ddd6d4625',
+    'size' => 68044
+  }
+};

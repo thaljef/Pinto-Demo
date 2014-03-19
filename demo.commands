@@ -1,0 +1,78 @@
+# Set upa
+!!!rm -rf MyCPAN
+!!!rm -rf sandbox
+
+# Remove some bits, to force reinstallation
+!!!rm -rf ~/opt/local/pinto/lib/perl5/HTTP*
+!!!rm -rf ~/opt/local/pinto/lib/perl5/Pinto*
+!!!rm -rf ~/opt/local/pinto/lib/perl5/*/auto/Pinto
+
+# Skip tests, so installs are faster
+!!!export PERL_CPANM_OPT='--notest --noquiet'
+echo 'Here we go!'; clear
+
+# Install pinto
+curl -L http://getpinto.stratopan.com | bash
+source ~/opt/local/pinto/etc/bashrc
+
+# Create repository
+pinto %%%--root MyCPAN %%%init %%%--source file://$PWD/CPAN-Today
+
+# Show repository structure
+find MyCPAN -type f
+
+# Set ENV var, so we can be lazy
+export PINTO_REPOSITORY_ROOT=$PWD/MyCPAN
+
+# Pull Dancer from CPAN
+pinto pull%%% Dancer
+
+# Show stack contents
+pinto list
+clear
+
+# Install Dancer from MyCPAN
+cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% --local-lib-contained sandbox Dancer
+
+# URI is broken so inject our patched one
+pinto add%%% URI-1.58_PATCHED.tar.gz
+
+# Pin our URI so it doesn't change
+pinto pin%%% URI
+
+# Edit config file to travel forward in time
+(exec < /dev/tty vim MyCPAN/.pinto/config/pinto.ini)
+
+# Get latest Dancer
+pinto update Dancer%%%
+
+# Show log to explain the pin
+pinto log
+
+# Make a copy of the stack
+pinto copy%%% master devel
+
+# Show the stack listing
+pinto stacks
+
+# Unpin Dancer
+pinto unpin%%% --stack devel%%% Dancer
+
+# Update Dancer
+pinto update --stack devel%%% Dancer
+
+# Install new Dancer
+cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% --local-lib-contained sandbox Dancer
+
+# Compare the stacks
+pinto diff%%% master devel
+
+# Merge changes back to master
+pinto merge%%% devel
+
+# Compare stacks again
+pinto diff master devel
+
+# The end
+echo 'Thank You!'
+exit

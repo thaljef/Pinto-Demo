@@ -1,0 +1,19 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:22 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Params-Util-1.07.tar.gz' => {
+    'md5' => '02db120c0eef87aae1830cc62bdec37b',
+    'md5-ungz' => 'd9545eeb589499140298f674e05238f4',
+    'mtime' => '2012-03-11',
+    'sha256' => '30f1ec3f2cf9ff66ae96f973333f23c5f558915bb6266881eac7423f52d7c76c',
+    'sha256-ungz' => 'c2f29322f834e1a8caeee8bde8eb4b8670fc5cf9bc322ee8c09ac312189e6722',
+    'size' => 40726
+  },
+  'Test-NoWarnings-1.04.tar.gz' => {
+    'md5' => '682ed043f7d3e38f3dfd8745fd21c49a',
+    'md5-ungz' => '294875362f56f963e9a74fac900c4349',
+    'mtime' => '2011-12-01',
+    'sha256' => '638a57658cb119af1fe5b15e73d47c2544dcfef84af0c6b1b2e97f08202b686c',
+    'sha256-ungz' => 'd6b428f8bf9ef577bc02f1c34054441ca8bf9f0f81d52703ab98d3690ddc3226',
+    'size' => 18204
+  }
+};

@@ -1,0 +1,19 @@
+# CHECKSUMS file written on Tue Jul 16 08:44:02 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'HTML-Tagset-3.20.tar.gz' => {
+    'md5' => 'd2bfa18fe1904df7f683e96611e87437',
+    'md5-ungz' => '60900d009589823987232e465070c580',
+    'mtime' => '2008-03-01',
+    'sha256' => 'adb17dac9e36cd011f5243881c9739417fd102fce760f8de4e9be4c7131108e2',
+    'sha256-ungz' => '8963638c57930fffaa7ba28ddc9057aa0055ba4ad909193a808bb3aaddcbd3d2',
+    'size' => 8150
+  },
+  'Test-Pod-Coverage-1.08.tar.gz' => {
+    'md5' => '33405cca7c75b7b89c06ba30eea66692',
+    'md5-ungz' => '4b806f22f2471ae9930be382f8befdc4',
+    'mtime' => '2006-01-26',
+    'sha256' => 'e06336c3eb7d0f37605934b983ececf2782c78dda04ffdb96c7dc12f466a5578',
+    'sha256-ungz' => '0fbdac8e1fef4696c58a72f92d62a7caafb85d95a08448eacd25322a6d448cd4',
+    'size' => 6418
+  }
+};

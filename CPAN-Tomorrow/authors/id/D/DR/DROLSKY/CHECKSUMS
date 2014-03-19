@@ -1,0 +1,19 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:16 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Devel-StackTrace-1.30.tar.gz' => {
+    'md5' => 'e318d2cb00c5bcba41c93f1e7280ab05',
+    'md5-ungz' => '266d9bdcefb517ac9b8001b163d29bde',
+    'mtime' => '2012-11-20',
+    'sha256' => 'f4af79762263e477a65764ec9ff837e6e1c9f1f2c966c183036cd54bdee723d4',
+    'sha256-ungz' => 'b9990b8f0dd06c01c55743ca25b5c898fb24cc83dc28f1d3a27a70fadb264a13',
+    'size' => 18518
+  },
+  'Exception-Class-1.37.tar.gz' => {
+    'md5' => '9953d120112d971f1deafdba9dc15aa7',
+    'md5-ungz' => 'd0b81fc7bf1ba9e154dbe9465043ae84',
+    'mtime' => '2013-02-24',
+    'sha256' => '838b93c90a0bbd73d819dc7d3d854559880120b6878976fe2ab90a141d10cedc',
+    'sha256-ungz' => 'bc90b7cb81abd93555db218e31fa646d17cfbcb7ffa349399933e1bba4d923fe',
+    'size' => 26457
+  }
+};

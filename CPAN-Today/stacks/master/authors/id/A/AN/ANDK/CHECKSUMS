@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:20 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Devel-Symdump-2.10.tar.gz' => {
+    'md5' => '762386076eebe92b41c31da56eb9bd06',
+    'md5-ungz' => '0375bb19e4751cf60217f3f5fab8fdf2',
+    'mtime' => '2013-03-27',
+    'sha256' => '6b362910e8e8f6cd4d0c45550c21842875a6addaec642b7cb172fd0340859b0d',
+    'sha256-ungz' => '4af0d59aefe80ce67740ab2448acfbf85f3a14dc48d59a0fee5a27dd6384bcd8',
+    'size' => 17334
+  }
+};

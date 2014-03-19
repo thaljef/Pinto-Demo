@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:43:57 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Try-Tiny-0.16.tar.gz' => {
+    'md5' => '027ebee61b191a4b2fe4107cb7b51c7c',
+    'md5-ungz' => '683a644e730554ffbee9c6748e5ddd09',
+    'mtime' => '2013-07-10',
+    'sha256' => 'a8711329e622b5a95b06322f44b2ae11fd3eade8a4dced90bf70f4292d12d6f1',
+    'sha256-ungz' => '87388eb65e9005077d9eef6d69a724bd4cbb4b8d9caffdf20d01e12a5fb89365',
+    'size' => 15987
+  }
+};

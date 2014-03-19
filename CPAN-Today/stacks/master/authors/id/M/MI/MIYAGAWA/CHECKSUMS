@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 16 08:33:14 2013 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'HTTP-Server-Simple-PSGI-0.14.tar.gz' => {
+    'md5' => 'c26795112c9f616dbd37ece1c5895b55',
+    'md5-ungz' => '3c7cb0880efcc56794e9ccd1ed692820',
+    'mtime' => '2010-02-18',
+    'sha256' => '44c25aeb1923728ee011889fe73be56838e60249c0938a5b7a94e51d79900a51',
+    'sha256-ungz' => 'bdeb21ed2b9ee0e6a856fd67f4fabbbe50de152ff0bb284541e6c12878a55240',
+    'size' => 3890
+  }
+};
