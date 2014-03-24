@@ -8,10 +8,19 @@ Prerequisites
 =============
 
 
-* Install a perl
+* Install a perl (preferably 5.16.3 or later).  I recommend using perlbrew
+
+```bash
+curl -L http://install.perlbrew.pl | bash
+perlbrew install perl-5.16.3
+perlbrew use perl-5.16.3
+```
 
 * Install cpanm
 
+```bash
+curl -L http://cpanmin.us | perl - App::cpanminus
+```
 * Install pinto
 
 ```bash
