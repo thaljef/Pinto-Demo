@@ -84,7 +84,7 @@ pinto diff%%% master devel
 clear
 
 # Merge changes back to master
-pinto merge%%% devel
+pinto merge%%% devel master
 
 # Compare stacks again
 pinto diff%%% master devel
