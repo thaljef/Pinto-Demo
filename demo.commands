@@ -7,19 +7,33 @@
 !!!rm -rf ~/opt/local/pinto/lib/perl5/Pinto*
 !!!rm -rf ~/opt/local/pinto/lib/perl5/*/auto/Pinto
 
+# Set env vars, in case you don't use defaults
+!!!export PINTO_PAGER=less
+!!!export PINTO_EDITOR=vim
+!!!export PINTO_COLORS='green, yellow, red'
+!!!export PINTO_NO_COLOR=0
+!!!export PINTO_DIFF_STYLE=concise
+!!!export PINTO_DEBUG=0
+!!!export LESS=XRS
+
 # Skip tests, so installs are faster
 !!!export PERL_CPANM_OPT='--notest --noquiet'
-echo 'Here we go!'; clear
+
+# Interactive commands start here
+echo 'Here we go!'
+!!!clear
 
 # Install pinto
 curl -L http://getpinto.stratopan.com | bash
 source ~/opt/local/pinto/etc/bashrc
+clear
 
 # Create repository
 pinto %%%--root MyCPAN %%%init %%%--source file://$PWD/CPAN-Today
 
 # Show repository structure
 find MyCPAN -type f
+clear
 
 # Set ENV var, so we can be lazy
 export PINTO_REPOSITORY_ROOT=$PWD/MyCPAN
@@ -32,15 +46,17 @@ pinto list
 clear
 
 # Install Dancer from MyCPAN
-cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% --local-lib-contained sandbox Dancer
+cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% --local-lib-contained sandbox%%% Dancer
+clear
 
 # URI is broken so inject our patched one
 pinto add%%% URI-1.58_PATCHED.tar.gz
 
 # Pin our URI so it doesn't change
 pinto pin%%% URI
+clear
 
-# Edit config file to travel forward in time
+# Edit config file so "sources" is CPAN-Tomorrow
 (exec < /dev/tty vim MyCPAN/.pinto/config/pinto.ini)
 
 # Get latest Dancer
@@ -48,6 +64,7 @@ pinto update Dancer%%%
 
 # Show log to explain the pin
 pinto log
+clear
 
 # Make a copy of the stack
 pinto copy%%% master devel
@@ -55,24 +72,22 @@ pinto copy%%% master devel
 # Show the stack listing
 pinto stacks
 
-# Unpin Dancer
-pinto unpin%%% --stack devel%%% Dancer
-
 # Update Dancer
-pinto update --stack devel%%% Dancer
+pinto update --stack devel%%% --force%%% Dancer
 
 # Install new Dancer
-cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% --local-lib-contained sandbox Dancer
+cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% --local-lib-contained sandbox%%% Dancer
+clear
 
 # Compare the stacks
 pinto diff%%% master devel
+clear
 
 # Merge changes back to master
 pinto merge%%% devel
 
 # Compare stacks again
-pinto diff master devel
+pinto diff%%% master devel
 
 # The end
 echo 'Thank You!'
-exit
