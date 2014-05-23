@@ -50,21 +50,22 @@ cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% --local-lib-contained san
 clear
 
 # URI is broken so inject our patched one
-pinto add%%% URI-1.58_PATCHED.tar.gz
+pinto add%%% -m "Patched bug #3253 in URI"%%% URI-1.58_PATCHED.tar.gz
 
 # Pin our URI so it doesn't change
-pinto pin%%% URI
-clear
+pinto pin%%% -m "Pin URI until our patch is accepted upstream"%%% URI
+!!!clear
 
 # Edit config file so "sources" is CPAN-Tomorrow
 (exec < /dev/tty vim MyCPAN/.pinto/config/pinto.ini)
+!!!clear
 
-# Get latest Dancer
-pinto update Dancer%%%
+# Get latest Dancer (fails)
+pinto update%%% Dancer
 
 # Show log to explain the pin
 pinto log
-clear
+!!!clear
 
 # Make a copy of the stack
 pinto copy%%% master devel
@@ -73,7 +74,7 @@ pinto copy%%% master devel
 pinto stacks
 
 # Update Dancer
-pinto update --stack devel%%% --force%%% Dancer
+pinto update%%% --stack devel%%% --force%%% -M%%% Dancer
 
 # Install new Dancer
 cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% --local-lib-contained sandbox%%% Dancer
@@ -81,7 +82,7 @@ clear
 
 # Compare the stacks
 pinto diff%%% master devel
-clear
+!!!clear
 
 # Merge changes back to master
 pinto merge%%% devel master
