@@ -39,5 +39,5 @@ Running The Demo
 ```bash
 git clone git@github.com:thaljef/Pinto-Demo.git
 cd Pinto-Demo
-cleo demo.commands
+cleo demo.cleo
 ```
