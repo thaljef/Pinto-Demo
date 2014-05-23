@@ -1,0 +1,9 @@
+# Fetching a specific Module version
+
+# Feeding dependencies from Dist-Zilla
+
+# Generating a cpanfile
+
+# Installing everything in stack
+
+# Building a repo from @INC
