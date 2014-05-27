@@ -2,11 +2,9 @@
 
 package MyModule;
 
-use strict;
-use warnings;
+use Mojolicious;
+use Template;
 
-use Dancer;
-use HTTP::Message;
 #-----------------------------------------------------------------------------
 
 # VERSION

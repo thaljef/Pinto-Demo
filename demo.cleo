@@ -74,7 +74,7 @@ pinto copy%%% master devel
 pinto stacks
 
 # Update Dancer
-pinto update%%% --stack devel%%% --force%%% -M%%% Dancer
+pinto update%%% --stack devel%%% --force%%% Dancer
 
 # Install new Dancer
 cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% --local-lib-contained sandbox%%% Dancer
@@ -89,6 +89,3 @@ pinto merge%%% devel master
 
 # Compare stacks again
 pinto diff%%% master devel
-
-# The end
-echo 'Thank You!'
