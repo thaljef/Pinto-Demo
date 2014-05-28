@@ -12,6 +12,7 @@
 !!!export PINTO_DIFF_STYLE=concise
 !!!export PINTO_DEBUG=0
 !!!export LESS=XRS
+!!!cd $PWD
 
 # Skip tests, so installs are faster
 !!!export PERL_CPANM_OPT='--notest --noquiet'
@@ -32,14 +33,16 @@ clear
 # Fetching a specific Module version
 pinto -r cpan pull URI%%%==1.34
 clear
-!!!cd
+!!!cd ..
 
 # Building a repo from @INC
 mkdir tmp; cd tmp
 pinto -r MyCPAN init
 cpan -l
+clear
+
 cpan -l%%% | perl -pe 's/\s+/==/'%%% | pinto -r MyCPAN pull --no-recurse --no-fail
-!!cd ..
+!!!cd ..
 
 # The end
 echo 'Thank You!'
