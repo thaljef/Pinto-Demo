@@ -2,6 +2,7 @@
 !!!rm -rf tmp
 !!!rm -rf MyModule/cpan
 !!!rm -rf MyModule/local
+!!!rm -rf MyModule-0.01
 !!!clear
 
 # Environment stuff
@@ -19,30 +20,25 @@
 
 # Feeding dependencies from Dist-Zilla
 cd MyModule; find .
+clear
+
 cat dist.ini
 clear
 
-pinto -r cpan init
-dzil listdeps%%% | pinto -r cpan pull
+pinto init cpan --source file:///Users/jeff/wrk/Pinto/Pinto-Demo/CPAN-Today
+export PINTO_REPOSITORY_ROOT=$PWD/cpan
 clear
 
-# Installing everything in stack
-pinto -r cpan install%%% --all%%% -L local 
+dzil listdeps%%% | pinto pull%%% -m 'Initial dependencies for MyModule'
+pinto -r cpan ls
 clear
 
 # Fetching a specific Module version
-pinto -r cpan pull URI%%%==1.34
-clear
-!!!cd ..
+pinto pull URI%%%==1.34%%% --no-recurse%%% -M
 
-# Building a repo from @INC
-mkdir tmp; cd tmp
-pinto -r MyCPAN init
-cpan -l
+# Installing everything in stack
+pinto install%%% --all%%% -L local 
 clear
-
-cpan -l%%% | perl -pe 's/\s+/==/'%%% | pinto -r MyCPAN pull --no-recurse --no-fail
-!!!cd ..
 
 # The end
 echo 'Thank You!'

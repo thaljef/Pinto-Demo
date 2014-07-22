@@ -24,7 +24,7 @@ echo 'Here we go!'
 !!!clear
 
 # Install pinto
-curl -L http://getpinto.stratopan.com | bash
+curl -sL http://getpinto.stratopan.com | bash
 source ~/opt/local/pinto/etc/bashrc
 clear
 
