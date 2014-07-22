@@ -3,7 +3,6 @@
 !!!rm -rf sandbox
 
 # Remove some bits, to force reinstallation
-!!!rm -rf ~/opt/local/pinto/lib/perl5/HTTP*
 !!!rm -rf ~/opt/local/pinto/lib/perl5/Pinto*
 !!!rm -rf ~/opt/local/pinto/lib/perl5/*/auto/Pinto
 
@@ -50,7 +49,7 @@ cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% Dancer
 clear
 
 # URI is broken so inject our patched one
-pinto add%%% -m "Patched bug #3253"%%% URI-1.58_PATCHED.tar.gz
+pinto add%%% -m "Patched bug #3253"%%% URI-1.34_PATCHED.tar.gz
 
 # Pin our URI so it doesn't change
 pinto pin%%% -m "Pin URI until fixed upstream"%%% URI
