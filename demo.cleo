@@ -17,7 +17,7 @@
 !!!export LESS=XRS
 
 # Skip tests, so installs are faster
-!!!export PERL_CPANM_OPT='--notest --noquiet'
+!!!export PERL_CPANM_OPT='--local-lib-contained=sandbox --notest --noquiet'
 
 # Interactive commands start here
 echo 'Here we go!'
@@ -46,18 +46,18 @@ pinto list
 clear
 
 # Install Dancer from MyCPAN
-cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% --local-lib-contained sandbox%%% Dancer
+cpanm --mirror-only %%%--mirror file://$PWD/MyCPAN %%% Dancer
 clear
 
 # URI is broken so inject our patched one
-pinto add%%% -m "Patched bug #3253 in URI"%%% URI-1.58_PATCHED.tar.gz
+pinto add%%% -m "Patched bug #3253"%%% URI-1.58_PATCHED.tar.gz
 
 # Pin our URI so it doesn't change
-pinto pin%%% -m "Pin URI until our patch is accepted upstream"%%% URI
+pinto pin%%% -m "Pin URI until fixed upstream"%%% URI
 !!!clear
 
 # Edit config file so "sources" is CPAN-Tomorrow
-(exec < /dev/tty vim MyCPAN/.pinto/config/pinto.ini)
+!!!perl -pi -e 's/Today/Tomorrow/' MyCPAN/.pinto/config/pinto.ini 
 !!!clear
 
 # Get latest Dancer (fails)
@@ -77,7 +77,7 @@ pinto stacks
 pinto update%%% --stack devel%%% --force%%% Dancer
 
 # Install new Dancer
-cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% --local-lib-contained sandbox%%% Dancer
+cpanm --mirror-only%%% --mirror file://$PWD/MyCPAN%%%/stacks/devel%%% Dancer
 clear
 
 # Compare the stacks
@@ -89,3 +89,6 @@ pinto merge%%% devel master
 
 # Compare stacks again
 pinto diff%%% master devel
+
+# The end
+echo 'The End'
