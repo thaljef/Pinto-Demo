@@ -30,7 +30,7 @@ export PINTO_REPOSITORY_ROOT=$PWD/cpan
 clear
 
 dzil listdeps%%% | pinto pull%%% -m 'Initial dependencies for MyModule'
-pinto -r cpan ls
+pinto ls
 clear
 
 # Fetching a specific Module version
