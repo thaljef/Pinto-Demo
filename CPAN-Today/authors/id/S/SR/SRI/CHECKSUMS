@@ -1,0 +1,11 @@
+# CHECKSUMS file written on Tue Jul 22 18:35:47 2014 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'Mojolicious-5.16.tar.gz' => {
+    'md5' => '3e0e4a0da50717486ecf09717bf8205d',
+    'md5-ungz' => '7905de477fc75721a1881a908e08ea27',
+    'mtime' => '2014-07-21',
+    'sha256' => 'f1b477afbb72a5d1b9716c0cdd8b0dd169ae1b34255672a300faa2eef12f1ca3',
+    'sha256-ungz' => '0085ad557b909153b0e3cb2f954d989ef32985bf52259ecd8e2db7b9e3b36bb4',
+    'size' => 639469
+  }
+};

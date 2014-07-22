@@ -1,0 +1,19 @@
+# CHECKSUMS file written on Tue Jul 22 18:35:51 2014 GMT by CPAN::Checksums (v2.08)
+$cksum = {
+  'AppConfig-1.66.tar.gz' => {
+    'md5' => '21aa4d1bf70a49a94c2dc9293389b3a0',
+    'md5-ungz' => '1e1a0eeabb4114a4d5d9fbd0fde84b45',
+    'mtime' => '2007-07-06',
+    'sha256' => '8b402de20569e6499e55bd36bd2264d964a41218f75fde6ac29902d16fd23bdc',
+    'sha256-ungz' => '985d3b4b7b929ba7997f9343285edb7837d4d8536360dc584231bde26b1c105b',
+    'size' => 63521
+  },
+  'Template-Toolkit-2.25.tar.gz' => {
+    'md5' => '6be78743caf5fafe8de4a17c2d0c72ff',
+    'md5-ungz' => '44e893935fc97b98a165a776a045009c',
+    'mtime' => '2013-07-24',
+    'sha256' => 'f423763b01604dcf27902cc6fdb22a6d1e5d3f2f72044fd9e83123220f781e11',
+    'sha256-ungz' => '82560084130d0c9397c432c174aedd59d1faad90dd56389b93c49fec2bebb470',
+    'size' => 501038
+  }
+};
